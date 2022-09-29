@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         webView=findViewById(R.id.WV)
         webView.webViewClient= WebViewClient()
-        webView.loadUrl("http://172.22.150.7/remote/")
+        webView.loadUrl("http://192.168.5.179/remote/")
 
         //web setting
         val webSettings=webView.settings
