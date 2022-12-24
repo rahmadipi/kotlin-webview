@@ -1,13 +1,12 @@
 package com.example.pos
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.WindowManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import kotlinx.coroutines.delay
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -19,7 +18,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //konten
         setContentView(R.layout.activity_main)
+        //portrait mode
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
         //swipe swipe
         swipeRefreshLayout=findViewById(R.id.swiperefresh)
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         webView=findViewById(R.id.WV)
         webView.webViewClient= WebViewClient()
-        webView.loadUrl("http://192.168.5.179/remote/")
+        webView.loadUrl("https://www.google.com/")
 
         //web setting
         val webSettings=webView.settings

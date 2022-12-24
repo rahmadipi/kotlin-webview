@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">RHR-SO</string>
+    <string name="app_name">Distributor-app</string>
+    <!--string name="app_name">RHR-SO</string-->
+    <!--string name="app_name">Transhome-live</string-->
 </resources>
