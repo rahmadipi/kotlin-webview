@@ -65,4 +65,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //refresh saat scroll bawah
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    //geo location
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
 }
