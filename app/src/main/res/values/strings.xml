@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Distributor-app</string>
-    <!--string name="app_name">RHR-SO</string-->
-    <!--string name="app_name">Transhome-live</string-->
+    <string name="app_title">Default App</string>
+    <string name="base_web_url">-</string>
 </resources>

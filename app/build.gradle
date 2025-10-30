@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.r_app.SO"
+        applicationId "com.example.pos"
         minSdk 16
         targetSdk 32
         versionCode 1
@@ -22,17 +22,40 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "branding"
+
+    productFlavors {
+        companyA {
+            dimension "branding"
+            applicationIdSuffix ".KMJ"
+            versionNameSuffix "-A"
+        }
+
+        companyB {
+            dimension "branding"
+            applicationIdSuffix ".MBK"
+            versionNameSuffix "-B"
+        }
+
+        companyC {
+            dimension "branding"
+            applicationIdSuffix ".RHR"
+            versionNameSuffix "-C"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
 }
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
